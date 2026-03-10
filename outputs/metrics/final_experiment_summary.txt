@@ -1,0 +1,56 @@
+KEY QUANTITATIVE RESULTS
+experiment_group,test_accuracy,test_loss,macro_precision,macro_recall,macro_f1,best_val_accuracy
+basic_aug,0.8314,0.5021,0.8446,0.8314,0.8341,0.8318
+advanced_aug,0.8140,0.5867,0.8238,0.8140,0.8099,0.8104
+stronger_aug,0.8138,0.5744,0.8174,0.8138,0.8109,0.8192
+baseline,0.8004,0.6080,0.8316,0.8004,0.8061,0.7952
+
+BEST PERFORMING AUGMENTATION SETTING
+experiment_group=basic_aug
+test_accuracy=0.8314
+test_loss=0.5021
+macro_f1=0.8341
+
+MOST COMMON ERROR PATTERNS
+global_top_confusions,true_label,pred_label,count
+global,cat,dog,511
+global,dog,cat,460
+global,deer,cat,298
+global,frog,cat,235
+global,bird,dog,194
+global,bird,cat,177
+global,horse,cat,171
+global,deer,bird,153
+global,truck,automobile,149
+global,dog,horse,143
+basic_aug_top_confusions,true_label,pred_label,count
+basic_aug,dog,cat,150
+basic_aug,deer,cat,120
+basic_aug,cat,dog,103
+basic_aug,frog,cat,102
+basic_aug,truck,automobile,98
+advanced_aug_top_confusions,true_label,pred_label,count
+advanced_aug,cat,dog,286
+advanced_aug,bird,dog,82
+advanced_aug,cat,horse,77
+advanced_aug,dog,horse,75
+advanced_aug,bird,frog,69
+stronger_aug_top_confusions,true_label,pred_label,count
+stronger_aug,cat,dog,122
+stronger_aug,cat,truck,82
+stronger_aug,airplane,ship,79
+stronger_aug,dog,cat,79
+stronger_aug,bird,dog,68
+baseline_top_confusions,true_label,pred_label,count
+baseline,dog,cat,231
+baseline,deer,cat,178
+baseline,frog,cat,133
+baseline,automobile,truck,131
+baseline,horse,cat,122
+
+BRIEF FACTUAL COMPARISON
+rank,experiment_group,test_accuracy,delta_vs_best,delta_vs_baseline
+1,basic_aug,0.8314,+0.0000,+0.0310
+2,advanced_aug,0.8140,-0.0174,+0.0136
+3,stronger_aug,0.8138,-0.0176,+0.0134
+4,baseline,0.8004,-0.0310,+0.0000

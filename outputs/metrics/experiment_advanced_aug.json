@@ -1,0 +1,28 @@
+{
+  "experiment_group": "advanced_aug",
+  "train_transform": [
+    "RandomHorizontalFlip(p=0.5)",
+    "RandomCrop(size=32, padding=4)",
+    "ToTensor()",
+    "Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2470, 0.2435, 0.2616))"
+  ],
+  "test_transform": [
+    "ToTensor()",
+    "Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2470, 0.2435, 0.2616))"
+  ],
+  "mixup": {
+    "enabled": true,
+    "alpha": 0.2
+  },
+  "fixed_settings": {
+    "model": "resnet18",
+    "optimizer": "Adam",
+    "loss": "CrossEntropyLoss",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "batch_size": 128,
+    "epochs": 10,
+    "seed": 42,
+    "val_size": 5000
+  }
+}

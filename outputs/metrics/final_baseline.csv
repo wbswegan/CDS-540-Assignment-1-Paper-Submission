@@ -1,0 +1,2 @@
+experiment_group,best_epoch,best_val_accuracy,final_test_loss,final_test_accuracy
+baseline,10,0.7952,0.607969498205185,0.8004

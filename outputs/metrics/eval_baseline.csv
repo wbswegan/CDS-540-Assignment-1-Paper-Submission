@@ -1,0 +1,2 @@
+experiment_group,checkpoint,num_samples,test_loss,test_accuracy
+baseline,outputs/models\resnet18_baseline.pt,10000,0.607969498205185,0.8004

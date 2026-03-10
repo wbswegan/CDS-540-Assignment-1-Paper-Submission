@@ -1,0 +1,11 @@
+true_name,pred_name,count
+cat,dog,122
+cat,truck,82
+airplane,ship,79
+dog,cat,79
+bird,dog,68
+airplane,truck,68
+dog,horse,68
+bird,airplane,64
+bird,deer,61
+deer,horse,52

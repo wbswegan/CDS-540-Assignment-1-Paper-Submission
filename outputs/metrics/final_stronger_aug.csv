@@ -1,0 +1,2 @@
+experiment_group,best_epoch,best_val_accuracy,final_test_loss,final_test_accuracy
+stronger_aug,10,0.8192,0.5743838360786439,0.8138

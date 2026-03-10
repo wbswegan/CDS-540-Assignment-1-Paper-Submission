@@ -1,0 +1,2 @@
+experiment_group,checkpoint,num_samples,test_loss,test_accuracy
+stronger_aug,outputs/models\resnet18_stronger_aug.pt,10000,0.5743838360786439,0.8138
